@@ -18,17 +18,17 @@ const Hero: React.FC = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 bg-military/20 border border-military/50 px-3 py-1 rounded-full text-military text-xs font-bold uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 bg-military/30 border border-military/60 px-3 py-1 rounded-full text-military-light text-xs font-bold uppercase tracking-widest mb-6 shadow-glow">
             <Shield className="w-3 h-3" />
             Reliability Defined. Est. 2024
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-display font-black uppercase tracking-tighter text-white leading-none mb-6">
+          <h1 className="text-5xl md:text-8xl font-display font-black uppercase tracking-tighter text-white leading-none mb-6 drop-shadow-2xl">
             Connecting the <span className="text-military italic">Mountain State</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-400 font-medium mb-10 max-w-2xl leading-relaxed">
-            High-performance aerial fiber optics and telecommunications infrastructure across <span className="text-white font-bold">{REGION}</span>. Rugged, disciplined, and built to last.
+          <p className="text-xl md:text-2xl text-gray-100 font-medium mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
+            High-performance aerial fiber optics and telecommunications infrastructure across <span className="text-white font-black underline decoration-military underline-offset-4">{REGION}</span>. Rugged, disciplined, and built to last.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -52,11 +52,13 @@ const Hero: React.FC = () => {
       {/* Stats / Credentials Bar */}
       <div className="absolute bottom-0 left-0 right-0 bg-military py-4 hidden lg:block">
         <div className="container mx-auto px-6 flex justify-between items-center text-black font-display font-bold uppercase tracking-widest text-sm">
+          <span className="flex items-center gap-2">
+            <span className="text-lg font-black tracking-normal">500,000'+ FT</span> CABLE INSTALLED YTD
+          </span>
+          <span className="w-1.5 h-1.5 bg-black rounded-full" />
           <span>Aerial Fiber Specialists</span>
           <span className="w-1.5 h-1.5 bg-black rounded-full" />
-          <span>General Contractor Trusted</span>
-          <span className="w-1.5 h-1.5 bg-black rounded-full" />
-          <span>OSHA 10 Certified Workforce</span>
+          <span>OSHA 10 Certified</span>
           <span className="w-1.5 h-1.5 bg-black rounded-full" />
           <span>24/7 Emergency Response</span>
         </div>

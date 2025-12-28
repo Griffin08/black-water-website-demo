@@ -21,7 +21,6 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {/* Logo Placeholder - Representing the Green/Black aesthetic */}
           <div className="w-10 h-10 bg-military rounded flex items-center justify-center text-black font-black text-xl border-2 border-black shadow-lg">
             B
           </div>
@@ -36,7 +35,7 @@ const Header: React.FC = () => {
             <a 
               key={link.href} 
               href={link.href} 
-              className="text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-military transition-colors"
+              className="text-sm font-bold uppercase tracking-widest text-gray-200 hover:text-military transition-colors"
             >
               {link.label}
             </a>
@@ -65,7 +64,7 @@ const Header: React.FC = () => {
             <a 
               key={link.href} 
               href={link.href} 
-              className="text-lg font-bold uppercase tracking-wider"
+              className="text-lg font-bold uppercase tracking-wider text-white"
               onClick={() => setIsOpen(false)}
             >
               {link.label}

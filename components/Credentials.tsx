@@ -11,7 +11,6 @@ const Credentials: React.FC = () => {
           
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-shrink-0">
-              {/* OSHA Badge Representation */}
               <div className="w-48 h-48 bg-black rounded-full border-8 border-military flex flex-col items-center justify-center text-center shadow-2xl transform hover:scale-110 transition-transform">
                 <ShieldCheck className="w-16 h-16 text-military mb-2" />
                 <span className="text-2xl font-display font-black text-white leading-none">OSHA 10</span>
@@ -24,10 +23,10 @@ const Credentials: React.FC = () => {
                 <Award className="text-military w-6 h-6" />
                 <span className="text-military font-bold uppercase tracking-[0.3em] text-sm">Industry Standard Credentials</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-display font-black uppercase tracking-tighter mb-6">
+              <h2 className="text-4xl md:text-5xl font-display font-black uppercase tracking-tighter mb-6 text-white">
                 Trust Built on <span className="text-military">Safety</span>
               </h2>
-              <p className="text-xl text-gray-400 leading-relaxed mb-8">
+              <p className="text-xl text-gray-100 font-medium leading-relaxed mb-8">
                 For General Contractors, reliability starts with safety. Our entire workforce is OSHA 10 Certified, ensuring that we maintain a safe, disciplined, and efficient job site on every single deployment.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -39,7 +38,7 @@ const Credentials: React.FC = () => {
                   'Emergency Action Prepared',
                   'Professional Gear & Equipment'
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-white font-bold uppercase tracking-tight text-sm">
+                  <li key={item} className="flex items-center gap-3 text-white font-black uppercase tracking-tight text-sm">
                     <CheckCircle2 className="w-5 h-5 text-military" />
                     {item}
                   </li>
