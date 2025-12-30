@@ -1,55 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blackwater Solutions | Aerial Fiber & Infrastructure</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackwater Solutions | Professional Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              military: {
-                DEFAULT: '#4B5320',
-                dark: '#353b17',
-                light: '#626d2a'
-              },
-              tactical: {
-                black: '#0a0a0a',
-                gray: '#1c1c1c'
-              }
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Oswald', 'sans-serif']
-            }
-          }
-        }
-      }
-    </script>
     <style>
-      body {
-        background-color: #0a0a0a;
-        color: #ffffff;
-        scroll-behavior: smooth;
-      }
-      .oswald { font-family: 'Oswald', sans-serif; }
+        body { background-color: #000000; color: white; font-family: sans-serif; }
+        .teal-glow { text-shadow: 0 0 10px #2dd4bf; }
+        .btn-teal { background-color: #2dd4bf; color: black; transition: all 0.3s; }
+        .btn-teal:hover { background-color: #14b8a6; transform: scale(1.05); box-shadow: 0 0 15px #2dd4bf; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<body>
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
+        <div class="text-2xl font-bold tracking-tighter teal-glow">BLACKWATER SOLUTIONS</div>
+        <div class="space-x-6">
+            <a href="https://www.facebook.com/share/157G8rSgXo/?mibextid=wwXIfr" target="_blank" class="hover:text-teal-400">Facebook</a>
+        </div>
+    </nav>
+
+    <main class="flex flex-col items-center justify-center min-h-[80vh] text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Expert Solutions. <br><span class="text-teal-400">Reliable Results.</span></h1>
+        <p class="text-gray-400 text-lg mb-8 max-w-2xl">Professional services tailored to your needs. Secure, trusted, and locally owned.</p>
+        <div class="flex gap-4">
+            <a href="mailto:contact@blackwatersolutions.com" class="btn-teal px-8 py-3 rounded-full font-bold">Contact Us</a>
+            <a href="https://www.facebook.com/share/157G8rSgXo/?mibextid=wwXIfr" target="_blank" class="border border-teal-400 text-teal-400 px-8 py-3 rounded-full font-bold hover:bg-teal-400 hover:text-black">View Facebook</a>
+        </div>
+    </main>
+
+    <footer class="p-10 border-t border-gray-800 text-center text-gray-500 text-sm">
+        &copy; 2025 Blackwater Solutions. All rights reserved.
+    </footer>
+</body>
 </html>
